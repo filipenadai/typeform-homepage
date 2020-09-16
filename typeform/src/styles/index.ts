@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
- 
+
 export const Main = styled.main`
     .first {
         background: red;
@@ -10,14 +10,37 @@ export const Main = styled.main`
 
         .a {
             background: #f5f1ea;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            .left-side {
+                background: #7dbb91;
+                height: 100%;
+                width: 50% 
+            }
+            .right-side {
+                height: 100%;
+                width: 50%;
+
+                .right-image{ 
+                    background: #7dbb91;
+                    height: 100%;
+                    width: 100%
+                }
+            }
         }
 
         .b {
             background: #582534;
+            height: 100%;
+            width: 100%;
         }
 
         .c {
             background: #0a7397;
+            height: 100%;
+            width: 100%;
         }
     }
 
