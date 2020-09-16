@@ -1,6 +1,8 @@
 import React from 'react';
 
 import GlobalStyles from './styles/global';
+import FirstAndSecond from './components/FirstAndSecond';
+
 import { Main, Sticky, Section } from './styles';
 function App() {
   return (
@@ -9,14 +11,16 @@ function App() {
 		<Main style={{height: '1610vh'}}>
 
 			<Section style={{height: '72.7%'}}>
-				<Sticky className="first"/>
-				<Sticky className="second"/>
+				<FirstAndSecond />
 			</Section>
 
-			<Section>
+			<Section style={{height: '9.7%'}}>
 				<Sticky className="third"/>
 			</Section>
-			
+
+			<Section style={{height: '10.1%'}}>
+				<Sticky className="fourth"/>
+			</Section>
 		</Main>
     </>
   );
